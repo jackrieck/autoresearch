@@ -8,6 +8,9 @@ apt-get update -y
 curl -LsSf https://astral.sh/uv/install.sh | sudo -u ubuntu sh
 echo 'source /home/ubuntu/.local/bin/env' >> /home/ubuntu/.bashrc
 
+# Install Claude Code CLI
+curl -fsSL https://claude.ai/install.sh | sudo -u ubuntu bash
+
 # Clone the repo and set up the project
 sudo -u ubuntu git clone https://github.com/jackrieck/autoresearch.git /home/ubuntu/autoresearch
 cd /home/ubuntu/autoresearch
